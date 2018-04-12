@@ -39,10 +39,8 @@ function Test_And_Install_Package() {
 }
 
 printf "\n\n\n"
-coloredEcho "*******************************************************" blue
-coloredEcho "Weigao is on of the best soft engineer in the world" blue
-coloredEcho "*******************************************************" blue
-coloredEcho "Starts in 3 seconds...." blue
+coloredEcho "Weigao is on of the best soft engineer in the world!" blue
+echo "Starts in 3 seconds...." 
 sleep 3
 
 
