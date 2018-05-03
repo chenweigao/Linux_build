@@ -39,9 +39,9 @@ function Test_And_Install_Package() {
 }
 
 printf "\n"
-coloredEcho "Weigao is on of the best soft engineer in the world!" blue
+coloredEcho "Weigao is one of the best soft engineer in the world!" blue
 printf "\n"
-echo "Starts in 3 seconds...." 
+echo "Starts in 3 seconds....↑↑↑↑↑↑↑↑↑..." 
 sleep 3
 
 
@@ -52,15 +52,23 @@ Test_And_Install_Package vim
 Test_And_Install_Package python-pip
 Test_And_Install_Package guake
 
-read -p "Would you like to install Visual Studio Code? 'Y' or 'N' :" answer
+# read -p "Would you like to install Visual Studio Code? 'Y' or 'N' :" answer
+# case $answer in
+# Y|y) 
+# mkdir /tmp/vscode
+# cd /tmp/vscode/
+# wget https://vscode.cdn.azure.cn/stable/950b8b0d37a9b7061b6f0d291837ccc4015f5ecd/code_1.22.1-1522974421_amd64.deb
+# sudo dpkg -i *.deb
+# cd ~
+# coloredEcho "Successfully Installed VSCode!" green;;
+# N|n)
+# coloredEcho "You will not install Visual Studio Code!" red;;
+# esac
+read -p "Are you weigao chen? 'Y' or 'N': " answer
 case $answer in
-Y|y) 
-mkdir /tmp/vscode
-cd /tmp/vscode/
-wget https://vscode.cdn.azure.cn/stable/950b8b0d37a9b7061b6f0d291837ccc4015f5ecd/code_1.22.1-1522974421_amd64.deb
-sudo dpkg -i *.deb
-cd ~
-coloredEcho "Successfully Installed VSCode!" green;;
+Y|y)
+git config --global user.email "297859260@qq.com"
+git config --global user.name "chenweigao";;
 N|n)
-coloredEcho "You will not install Visual Studio Code!" red;;
+coloredEcho "Linux basic build done!" red;;
 esac
