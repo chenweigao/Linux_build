@@ -68,7 +68,8 @@ read -p "Are you weigao chen? 'Y' or 'N': " answer
 case $answer in
 Y|y)
 git config --global user.email "297859260@qq.com"
-git config --global user.name "chenweigao";;
+git config --global user.name "chenweigao"
+git config --global credential.helper cache;;
 N|n)
 coloredEcho "Linux basic build done!" red;;
 esac
