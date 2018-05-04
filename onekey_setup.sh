@@ -51,7 +51,7 @@ Test_And_Install_Package cmake
 Test_And_Install_Package vim
 Test_And_Install_Package python-pip
 Test_And_Install_Package guake
-
+Test_And_Install_Package tree
 # read -p "Would you like to install Visual Studio Code? 'Y' or 'N' :" answer
 # case $answer in
 # Y|y) 
